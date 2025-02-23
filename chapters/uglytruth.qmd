@@ -1,0 +1,3 @@
+# The Ugly Truth {#sec-ugly-truth}
+
+Writing your thesis in Quarto is hardwork but worth it.

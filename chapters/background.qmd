@@ -1,0 +1,15 @@
+# Background {#sec-background}
+
+Leadership in the modern world often requires a delicate balance between vision and pragmatism. As Pearson @pearson2025leadership argues in his seminal work, *Leadership, Chaos, and the Art of Bullshitting*, the best leaders are those who can make others believe they have the answers, even when they don't. It's not about having all the facts; it's about creating the illusion of control and moving forward in the face of uncertainty.
+
+![The Man, The Myth, The Legend](../figures/stewart-pearson.jpg)
+
+In the realm of data analysis, Pearson @pearson2025data warns that while data might seem objective, it is frequently subject to misinterpretation. In his article, *Data, Lies, and the Interpretation of Stuff*, he points out that data, much like any other tool, can be manipulated to tell any story you want, as long as you know how to spin it. This is especially true when data is used to support a narrative that isn’t entirely factual, but just plausible enough to get by.
+
+Moreover, methodology often plays a more significant role than we'd like to admit. In his work *Methodology: A Necessary Evil* @pearson2023research, he explores the necessary evil of academic rigor and how, at times, the methodology becomes more about ticking boxes than actually achieving clarity. The convoluted nature of some academic methods can obscure the real issues, making it harder for those outside the field to engage with the work meaningfully.
+
+Pearson @pearson2025data also addresses innovation in his chapter *Innovation Through Complete Chaos*. He suggests that true innovation comes not from well-structured plans but from the chaos and panic of dealing with problems that weren't foreseen. In times of crisis, it’s not the carefully crafted strategies that shine, but the ability to pivot and adapt in real-time.
+
+Finally, as Pearson @pearson2024failures contends in *Failure: The Unspoken Key to Success*, failure is often the true foundation of success. Without failure, there is no learning, no growth. It’s only through falling down and picking ourselves up again that we discover new paths and insights.
+
+Together, these works form the backbone of modern leadership thinking, combining elements of chaos, improvisation, and the strategic use of failure. By embracing the uncertainty and unpredictability of both data and leadership, one can navigate the ever-shifting landscape of the contemporary world.

@@ -1,0 +1,19 @@
+# Thesis Overview {.unnumbered}
+
+## Aims and objectives of the thesis
+
+
+## Structure of the Thesis
+### Part I: Let’s Get This Over With (The Theory)
+@sec-background: Background  
+@sec-review: Literature review  
+
+### Part II: Data, Lies, and the Ugly Truth
+@sec-data: Data  
+@sec-lies: Lies  
+@sec-ugly-truth: The Ugly Truth  
+
+### Part III: Conclusions: What Now?
+@sec-conclusion: Conclusion  
+@sec-whatnow: What now?  
+

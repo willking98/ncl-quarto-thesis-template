@@ -1,0 +1,19 @@
+# Appendix A {.unnumbered}
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+source("scripts/sensitivity-analysis.R")
+```
+
+```{r}
+#| label: tbl-appendix-summary-table
+#| echo: true
+#| warning: false
+#| message: false
+#| tbl-cap: "Sensitivity Analysis: Summary Table"
+
+summary_table
+```
+

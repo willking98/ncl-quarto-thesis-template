@@ -1,0 +1,80 @@
+project:
+  type: book
+
+book:
+  title: "Knowledge is porridge"
+  author: "Stewart Pearson"
+  date: "December 2000"
+  date-format: "MMMM YYYY"
+  chapters:
+    - index.qmd # You need to keep this called index - I use it for thesis structure overview
+    - frontmatter/dissemination.qmd
+    - part: chapters/part1.qmd # If you don't want parts you can get rid of these
+      chapters:
+        - chapters/background.qmd
+        - chapters/review.qmd
+    - part: chapters/part2.qmd
+      chapters:
+        - chapters/data.qmd
+        - chapters/lies.qmd
+        - chapters/uglytruth.qmd
+    - part: chapters/part3.qmd
+      chapters:
+        - chapters/conclusion.qmd
+        - chapters/whatnow.qmd
+    - bibliography/references.qmd
+    - chapters/appendixA.qmd
+
+bibliography: bibliography/zotero.bib
+csl: bibliography/vancouver.csl
+
+#--------------------------------------
+#--------- Output Format --------------
+#--------------------------------------
+
+#----------------HTML------------------
+## If you wish to render as web book uncomment below 
+# format: html
+
+#----------------WORD------------------
+## If you wish to render as word document uncomment below
+# format:
+#   docx:
+#     toc: false
+#     number-sections: true
+#     highlight-style: github
+
+#-----------------PDF------------------
+## If you want pdf consistent with NCL Uni "Guidelines for the Submission and Format of Theses" May 2023 uncomment below
+format:
+  pdf:
+    documentclass: scrreport
+    mainfont: "Garamond"
+    sansfont: "Garamond"
+
+    # ---------BINDING-------------
+    # Binding options below - uncomment as required
+    # linestretch: 1.5 # Line spacing - 1.5 is university guideline
+    # geometry:
+    #   - top=20mm
+    #   - left=30mm
+    #   - right=20mm
+    #   - bottom=20mm
+    #   - twoside # This flips the left/right margins on odd/even pages
+
+    keep-tex: true # This gives you a raw latex file (.tex) if desired
+    toc: true # table of contents
+    lot: true # table of tables
+    lof: true # table of figures
+    colorlinks: false # true = blue hyperlinks in tables of figs/tables
+
+    number-sections: true # page numbers
+    number-depth: 2 # guidelines state should be = 2 which would be 1.1.1 
+    papersize: a4
+
+    include-before-body: # Latex scripts
+      - frontmatter/abstract.tex # Abstract - put your abstract text in this abstract.tex file
+      - frontmatter/acknowledgements.tex # Acknowledgement - put your acknowledgement text in this abstract.tex file
+
+    include-in-header: 
+      - frontmatter/title-page.tex # Title page - put your own title and info here

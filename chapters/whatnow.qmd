@@ -1,0 +1,3 @@
+# What Now? {#sec-whatnow}
+
+Good luck. Be wary of Kable from `knitr` when rendering to word (`docx`).

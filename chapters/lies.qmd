@@ -1,0 +1,61 @@
+---
+execute:
+    echo: false
+    warning: false
+    message: false
+---
+# Lies {#sec-lies}
+
+```{r}
+#| label: tbl-employee-info
+#| tbl-cap: Overview of Employee Details Including Personal and Professional Information
+#| tbl-pos: h
+
+# Load necessary library
+library(gt)
+library(tidyverse)
+
+# Sample data frame
+data <- tibble(
+  Name = c("John", "Jane", "Mark", "Emily"),
+  Age = c(25, 30, 22, 28),
+  Department = c("HR", "Finance", "IT", "Marketing"),
+  Salary = c(55000, 70000, 48000, 60000)
+)
+
+# Create a gt table
+data |> 
+  gt() |> 
+  cols_label(
+    Name = "Employee Name",
+    Age = "Age (Years)",
+    Department = "Department",
+    Salary = "Salary (USD)"
+  ) |> 
+  tab_spanner(
+    label = "Personal Info",
+    columns = vars(Name, Age)
+  ) |> 
+  tab_spanner(
+    label = "Professional Info",
+    columns = vars(Department, Salary)
+  ) |> 
+  tab_style(
+    style = list(
+      cell_borders(sides = "bottom", color = "gray", weight = 2)
+    ),
+    locations = cells_body(columns = vars(Name, Age))
+  ) 
+
+```
+
+Use echo=TRUE in the code chunk option for showing the R code used to create output.
+```{r, echo=T}
+x <- seq(1:10)
+y <- seq(1:10)
+z <- x*y
+print(z)
+```
+
+
+

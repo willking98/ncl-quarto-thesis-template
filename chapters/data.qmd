@@ -1,0 +1,74 @@
+# Data {#sec-data}
+## Integrating your R data workflow into this thesis template
+- You will have R/Python data analysis scripts which do various things to raw data from your thesis.
+- You may want to contain this all within the thesis repository to keep everything neat
+- You could do something like I have done below in @sec-R
+- Or you could do your analysis directly in the chapter .qmd files. But probably that would make your .qmd files quite long and unpleasant!
+
+### R code {#sec-R}
+Remember when you source things from within your chapters/.qmd files the current working directory is in the chapters directory. Therefore define the filepath relative to there. Refer to the table and figure in text with @tbl-summary-table and @fig-airquality.
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+source("scripts/chap1.R")
+```
+
+```{r}
+#| label: fig-airquality
+#| echo: true
+#| warning: false
+#| message: false
+#| fig-cap: "Air Quality"
+
+plot_temp_ozone
+```
+
+```{r}
+#| label: tbl-summary-table
+#| echo: true
+#| warning: false
+#| message: false
+#| tbl-cap: "Summary Table"
+
+summary_table
+```
+
+I have put this table in an appendix to show how that would work. Please see Appendix A @tbl-appendix-summary-table. 
+
+## Example of Quarto Callout Blocks
+
+Quarto allows us to add various types of callouts to emphasize key information in our documents.
+
+### Callout Examples
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+::: {.callout-tip title="Tip with Title"}
+This is a callout with a title.
+:::
+
+
+::: {.callout-note appearance="simple"}
+
+## Pay Attention
+
+Using callouts is an effective way to highlight content that your reader give special consideration or attention.
+
+:::

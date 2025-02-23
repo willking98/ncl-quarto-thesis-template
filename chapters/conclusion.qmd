@@ -1,0 +1,44 @@
+# Conclusion {#sec-conclusion}
+## Maths
+Inline math: $E = mc^{2}$
+
+Display math:
+
+$$E = mc^{2}$$
+
+## Numbers from R in text
+First start by creating something in R.
+```{r, echo=TRUE}
+x <- 57295739
+x_label <- "a massive number"
+```
+How big is $x$ you say? $x$ = `r x` or $x$ = `r as.integer(x)`. You could say that $x$ is `r x_label`.
+
+
+
+## Cool diagrams with mermaid
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+## Embed video (into html)
+In html/online web version of this thesis you would see the video embedded into the webpage here.
+
+{{< video https://www.youtube.com/watch?v=cbLm--0Iudo >}}
+
+## Embed live webpage
+For me I embedded my surveys that were developed into the html version of the thesis to enable completion without leaving the live document. Here I have linked to the Quarto manual (no nobler site). When using iframes you sometimes have to be careful that they don't cause problems when rendering to pdf. If they do you can wrap them in fences that conditionally render the content depending on the output type you render to.
+
+```{=html}
+<iframe src="https://quarto.org/" width="500" height="400"></iframe>
+```
+
+## Markdown lists
+* unordered list
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
