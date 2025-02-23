@@ -1,6 +1,6 @@
 # Quarto PhD Thesis Template: Newcastle University 
 
-[PDF preview click here](_book/quarto-phd-template.pdf), [HTML available click here](https://willking98.quarto.pub/knowledge-is-porridge/)
+[PDF preview click here](_book/Knowledge-is-porridge.pdf), [HTML available click here](https://willking98.quarto.pub/knowledge-is-porridge/)
 
 # Install & Usage
 
