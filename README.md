@@ -66,8 +66,6 @@ This template has been constructed to specifically conform to the Newcastle Univ
 \pagenumbering{arabic}
 ```
 
-Page numbering counter starts on page 3 to skip the cover sheet, you can comment that out in before-body.tex. Dedication, Title-page, declaration, abstract and acknowledgements are optional. The template also allows glossaries to be written in Markdown (I find it much simpler), but distributes TOCs, LOTs, LOFs to latex (also simplere/more flexible). Example Glossary of abbreviations, symbols, and definitions are within. The table of contents, list of figures, and list of tables can be commented out within the toc.tex file. before-body.tex can be used to drop whatever preamble sections you won't need. 
-
 I have tried to keep this template pretty simple and limit the amount of latex usage throughout to ensure accessibility. Additionally, given university computer permissions I have tried to limit the number of dependencies required during the latex compilation process. Some other thesis templates wouldn't compile on my local machine due to associated admin permissions etc. 
 
 ## Submission and binding
