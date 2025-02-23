@@ -81,6 +81,13 @@ geometry:
   - twoside # This flips the left/right margins on odd/even pages
 ```
 
+You will also need to ensure that when you add your text to `abstract.tex` and `acknowledgements.tex` that if you want this to be 1.5 spaced you need to wrap the text in the following latex code. I have currently omitted this from the code as it is setup currently for normal line spacing during the writing process. Feel free to change this!
+
+```latex
+\begin{spacing}{1.5}
+  Abstract text here...
+\end{spacing}
+```
 
 
 ## Repository / Thesis Structure
